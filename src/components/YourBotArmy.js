@@ -16,7 +16,7 @@ function YourBotArmy({ bot, removeBot, fireBot }) {
              }
            })
            .map((bot) => 
-           <BotCard key={bot.id} bots={bot} handleClick={removeBot} fireBot={fireBot} />)
+           <BotCard key={bot.id} bots={bot} handleClick={removeBot} removeBot={removeBot} fireBot={fireBot} />)
           }
           Your Bot Army
         </div>

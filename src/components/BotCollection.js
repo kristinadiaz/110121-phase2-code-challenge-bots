@@ -8,7 +8,8 @@ function BotCollection({ bot, enlistBot, fireBot }) {
     <div className="ui four column grid">
       <div className="row">
         {
-          bot.map((bot) => <BotCard key={bot.id} bots={bot} handleClick={enlistBot} fireBot={fireBot} />)
+          bot.map((bot) => 
+          <BotCard key={bot.id} bots={bot} handleClick={enlistBot} fireBot={fireBot} />)
         }
         Collection of all bots
       </div>
