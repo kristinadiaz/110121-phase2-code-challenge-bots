@@ -2,13 +2,13 @@ import React from "react";
 import YourBotArmy from "./YourBotArmy";
 import BotCollection from "./BotCollection";
 
-function BotsPage() {
-  //start here with your code for step one
+function BotsPage({ bot, enlistBot, removeBot, fireBot }) {
+  // console.log(bots)
 
   return (
     <div>
-      <YourBotArmy />
-      <BotCollection />
+      <YourBotArmy bot={bot} enlistBot={enlistBot} removeBot={removeBot} fireBot={fireBot}/>
+      <BotCollection bot={bot} enlistBot={enlistBot} fireBot={fireBot} />
     </div>
   )
 }
